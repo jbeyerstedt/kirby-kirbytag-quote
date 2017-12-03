@@ -1,0 +1,6 @@
+{
+  "name": "quote",
+  "description": "Kirby Tag for (boostrap) blockquotes",
+  "license": "GNU GPLv3",
+  "type": "kirby-tag"
+}
