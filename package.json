@@ -1,6 +1,8 @@
 {
   "name": "quote",
-  "description": "Kirby Tag for (boostrap) blockquotes",
-  "license": "GNU GPLv3",
-  "type": "kirby-tag"
+  "description": "Kirbytag for (twitter bootstrap) blockquotes",
+  "author": "Jannik Beyerstedt <code@jannikbeyerstedt.de>",
+  "version": "1.0.0",
+  "type": "kirby-tag",
+  "license": "GNU GPLv3"
 }
