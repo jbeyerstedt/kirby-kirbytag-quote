@@ -1,8 +1,10 @@
 {
-  "name": "quote",
+  "name": "jbeyerstedt/quote",
   "description": "Kirbytag for (twitter bootstrap) blockquotes",
   "author": "Jannik Beyerstedt <code@jannikbeyerstedt.de>",
-  "version": "1.0.0",
-  "type": "kirby-tag",
-  "license": "GNU GPLv3"
+  "version": "0.9.0",
+  "license": "GNU GPLv3",
+  "autoload": {
+    "files": ["config.php"],
+  }
 }
