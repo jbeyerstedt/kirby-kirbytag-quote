@@ -8,6 +8,9 @@
  */
 
 Kirby::plugin('jbeyerstedt/quote', [
+  'options' => [
+    'default_style' => 'none'
+  ],
   'tags' => [
     'quote' => [
       'attr' => [
@@ -19,14 +22,14 @@ Kirby::plugin('jbeyerstedt/quote', [
         $html = '';
 
         $class = $tag->class;
-        if ($tag->option('quote.default_style', 'none') == 'bs') {
+        if ($tag->option('jbeyerstedt.quote.default_style') == 'bs') {
           $class .= ' blockquote';
         }
         $html .= '<blockquote class="' . $class . '">';
 
 
         $class_p = '';
-        if ($tag->option('quote.default_style', 'none') == 'bs') {
+        if ($tag->option('jbeyerstedt.quote.default_style') == 'bs') {
           $class_p .= ' mb-0';
         }
         $html .= '<p class="' . $class_p . '">'. $tag->value .'</p>';

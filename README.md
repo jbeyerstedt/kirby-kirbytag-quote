@@ -2,11 +2,14 @@
 by Jannik Beyerstedt from Hamburg, Germany  
 [jannikbeyerstedt.de](http://jannikbeyerstedt.de) | [Github](https://github.com/jbeyerstedt)  
 **license:** GNU GPL v3  
-**version:** v1.0.0
+**version:** v2.0.0
 
 ## Notice About Branches and Kirby 2
 Kirby 3 support was added in the `kirby3` branch, because Kirby 2 and Kirby 3 plugins are quite different.
 Now that Kirby 3 is released, I changed the default branch to `kirby3` but will keep the `master`, because old Kirby 2 projects might break, if I rename the branches.
+
+**Updating from the Kirby 2 version:** The configuration options are now prefixed by `jbeyerstedt.quote` instead of `quote`.
+This is caused by the new way, how plugins work within Kirby 3.
 
 
 ## Introduction
@@ -33,7 +36,7 @@ composer require jbeyerstedt/quote
 To enable the styling classes used by Bootstrap 4, add this to your `config.php`:
 
 ```php
-c::set('quote.default_style', 'bs');
+c::set('jbeyerstedt.quote.default_style', 'bs');
 ```
 
 #### Usage
