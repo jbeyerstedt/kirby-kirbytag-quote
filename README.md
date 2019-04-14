@@ -1,4 +1,4 @@
-# Quote Kirbytag for Kirby CMS v2/v3
+# Quote Kirbytag for Kirby CMS v3
 by Jannik Beyerstedt from Hamburg, Germany  
 [jannikbeyerstedt.de](http://jannikbeyerstedt.de) | [Github](https://github.com/jbeyerstedt)  
 **license:** GNU GPL v3  
@@ -13,13 +13,20 @@ Now that Kirby 3 is released, I changed the default branch to `kirby3` but will 
 This Kirbytag creates a html `blockquote` tag with the option to add an author via a footer tag.
 For everyone using the Bootstrap framework, the default Bootstrap classes can be activated in the settings.
 
+
 ## User Manual
 
 #### Installation
-Store the php file in
+For manual installation, copy all of these files to `site/plugins/kirbytag-quote`.
 
+If you are using git submodules to manage the plugins, use this command:
 ```
-site/tags/
+git submodule add https://github.com/jbeyerstedt/kirby-kirbytag-quote site/plugins/kirbytag-quote
+```
+
+If you are using composer to manage the plugins, try:
+```
+composer require jbeyerstedt/quote
 ```
 
 #### Configuration
@@ -28,7 +35,6 @@ To enable the styling classes used by Bootstrap 4, add this to your `config.php`
 ```php
 c::set('quote.default_style', 'bs');
 ```
-
 
 #### Usage
 Use this kirbytag as every other one in your text. Here are some examples:
