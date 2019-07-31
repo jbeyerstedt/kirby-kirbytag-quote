@@ -27,10 +27,14 @@ If you are using git submodules to manage the plugins, use this command:
 git submodule add https://github.com/jbeyerstedt/kirby-kirbytag-quote site/plugins/kirbytag-quote
 ```
 
-If you are using composer to manage the plugins, try:
+If you are using composer add this to your `composer.json` to always get the latest version:
+```json
+"require": {
+    "jbeyerstedt/quote": "dev-kirby3"
+}
 ```
-composer require jbeyerstedt/quote
-```
+Alternatively, you can select any version greater than 2.0.
+
 
 #### Configuration
 To enable the styling classes used by Bootstrap 4, add this to your `config.php`:
